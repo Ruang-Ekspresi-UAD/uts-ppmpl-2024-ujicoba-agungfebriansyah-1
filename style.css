@@ -1,39 +1,61 @@
 body {
-    background-color: rgba(33, 221, 90, 0.603);
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    background-color: rgba(30, 200, 85, 0.6);
+    /* Warna background sedikit berbeda */
+    font-family: Verdana, sans-serif;
+    /* Font diubah dari Arial ke Verdana */
+    margin: 15px;
+    /* Margin sedikit dikurangi */
+    line-height: 1.5;
+    /* Menambah jarak antar baris untuk keterbacaan */
 }
+
 img {
     display: block;
-    margin: 20px auto;
-    border-radius: 50%;
+    margin: 15px auto;
+    border-radius: 40%;
+    /* Bentuk border-radius sedikit berubah */
+    max-width: 90%;
+    /* Membuat gambar lebih responsif */
 }
-/* Existing styles... */
 
-/* Responsive Layout */
+
+/* Layout Responsif */
+
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+        align-items: center;
+        /* Menambahkan alignment center */
     }
-
     nav ul li {
-        margin: 5px 0;
+        margin: 6px 0;
     }
-
     img {
-        width: 150px;
+        width: 140px;
+        /* Ukuran gambar sedikit dikurangi */
     }
-
     body {
-        margin: 10px;
+        margin: 12px;
     }
 }
+
 footer {
-   
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.8);
+    /* Warna teks sedikit diubah */
     text-align: center;
-    padding: 10px 0;
+    padding: 12px 0;
+    /* Padding sedikit diperbesar */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Menambahkan background semi-transparan */
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+
+/* Memberikan jarak tambahan di bawah untuk footer tetap */
+
+main {
+    padding-bottom: 50px;
+    /* Disesuaikan dengan tinggi footer */
 }
